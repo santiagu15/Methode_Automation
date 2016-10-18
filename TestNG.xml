@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" verbose="1" >
+  <test name="Times_Digital" >
+    <classes>
+       <class name="news.co.uk.Main.TC1" />
+       <class name="news.co.uk.Main.TC2" />
+       <class name="news.co.uk.Main.TC3" />
+       <class name="news.co.uk.Main.TC4" />
+       <class name="news.co.uk.Main.TC5" />
+    </classes>
+  </test>
+</suite>

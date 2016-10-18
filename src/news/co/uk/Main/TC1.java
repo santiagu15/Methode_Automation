@@ -9,6 +9,8 @@ public class TC1 {
 		Automation auto = new Automation();
 		auto.launching();
 		Thread.sleep(3000);
+		auto.app_open();
+		Thread.sleep(2000);
 		auto.PublishingSystem();
 		Thread.sleep(3000);
 		auto.login();
@@ -39,14 +41,19 @@ public class TC1 {
 		Thread.sleep(3000);
 		auto.preparing_story();
 		Thread.sleep(3000);
+		auto.chromeiniti();
+		Thread.sleep(3000);
 		auto.preview_publish();
 		Thread.sleep(3000);
 		auto.amazon_bucket();
 		Thread.sleep(3000);
-		auto.close_window();
+		auto.storypreparationclose();
 		Thread.sleep(3000);
-		auto.confirm_popup();
+		auto.templatepageclose();
 		Thread.sleep(3000);
+		auto.digitalpageclose();
+		Thread.sleep(3000);
+		//auto.driverclose();
 	}
 	
 }

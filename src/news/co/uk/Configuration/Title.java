@@ -30,6 +30,7 @@ public class Title {
 	
 	//Broswer
 	public static String PREVIEW_BROWSER = "[REGEXPTITLE:(?i)The Times & The Sunday Times - Google Chrome]";
+	public static String PREVIEW_BROWSER_EDITION = "The Times & The Sunday Times - Google Chrome";
 	
 	public static String PREVIEW_ID = "[REGEXPTITLE:(?i)1475548111300]";
 	

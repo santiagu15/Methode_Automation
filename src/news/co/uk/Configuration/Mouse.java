@@ -9,9 +9,12 @@ public class Mouse {
 	public static String DOWN_2X = "{DOWN}{DOWN}";
 	public static String DOWN_3X = "{DOWN}{DOWN}{DOWN}";
 	public static String DOWN_4X = "{DOWN}{DOWN}{DOWN}{DOWN}";
+	public static String DOWN_5X = "{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}";
+	public static String DOWN_6X = "{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}";
 	public static String ENTER ="{ENTER}"; 
 	public static String UP_DOWN = "{UP}{DOWN}";
 	public static String DOWN_ENTER = "{DOWN}{DOWN}{ENTER}";
 	public static String DOWN_12X = "{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}";
+	public static String DOWN_15X = "{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}";
 	
 }

@@ -35,4 +35,20 @@ public class StoryPreparation {
 	public static String PUBLISH_CONFIRMATION = "[ID:6]";
 	public static int PUBLISH_CONFIRMATION_X = 41;
 	public static int PUBLISH_CONFIRMATION_Y = 12;
+	
+	//Article Timestamp
+	
+	public static String SET_ARTICLE_DATE = "[CLASS:Internet Explorer_Server; INSTANCE:1]";
+	public static int SET_ARTICLE_DATE_X = 60;
+	public static int SET_ARTICLE_DATE_Y = 425;
+
+	public static int SET_ARTICLE_TIME_X = 94;
+	public static int SET_ARTICLE_TIME_Y = 690;
+	
+	public static int DONE_ARTICLE_X = 175;
+	public static int DONE_ARTICLE_Y = 750;
+	
+	public static int ARTICLE_SAVE_X = 100;
+	public static int ARTICLE_SAVE_Y = 785;
+	
 }
