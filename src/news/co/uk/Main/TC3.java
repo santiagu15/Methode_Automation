@@ -11,14 +11,14 @@ public class TC3 {
 		Thread.sleep(3000);
 		auto.editionmetadata();
 		Thread.sleep(2000);
-//		auto.workflow_layout();
-//		Thread.sleep(3000);
-//		auto.workflowdone_layout();
-//		Thread.sleep(3000);
-//		auto.chromeiniti();
-//		Thread.sleep(3000);
-//		auto.Edition();
-//		Thread.sleep(3000);
+		auto.workflow_layout();
+		Thread.sleep(3000);
+		auto.workflowdone_layout();
+		Thread.sleep(3000);
+		auto.chromeiniti();
+		Thread.sleep(3000);
+		auto.Edition();
+		Thread.sleep(3000);
 		//auto.driverclose();
 	}
 }
