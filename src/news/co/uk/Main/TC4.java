@@ -14,5 +14,12 @@ public class TC4 {
 	auto.chromeiniti();
 	Thread.sleep(3000);
 	auto.preview_publish();
+	Thread.sleep(3000);
+	auto.storypreparationclose();
+	Thread.sleep(3000);
+	auto.templatepageclose();
+	Thread.sleep(3000);
+	auto.digitalpageclose();
+	Thread.sleep(3000);
 	}
 }

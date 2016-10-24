@@ -1,5 +1,10 @@
 package news.co.uk.Main;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 import org.testng.annotations.Test;
 
 import news.co.uk.Enum.TemplateSlice;
@@ -16,15 +21,17 @@ public class Testing {
 		
 		pageSource.contains(unid);
 	}*/
-	
-/*	@Test
+		@Test
 	public void test1() throws Exception{
-		Automation auto = new Automation();
-		auto.launching();
-		Thread.sleep(3000);
-		auto.win();
-		Thread.sleep(3000);*/
+			Automation auto = new Automation();
+			auto.launching();
+			auto.q_metadata();
+			auto.currentimestamp();
+			/*auto.app_open();
+			auto.PublishingSystem();
+			auto.login();*/
 	}
+}
 
 	/*public static void main(String[] args) {
 		System.out.println(TemplateSlice.COMMENT_1_AND_CARTOON);

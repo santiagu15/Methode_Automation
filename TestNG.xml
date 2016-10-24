@@ -7,6 +7,7 @@
        <class name="news.co.uk.Main.TC3" />
        <class name="news.co.uk.Main.TC4" />
        <class name="news.co.uk.Main.TC5" />
+       <class name="news.co.uk.Main.TC6" />
     </classes>
   </test>
 </suite>

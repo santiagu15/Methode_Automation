@@ -8,6 +8,7 @@ public class Title {
 	public static String TEMPLATE_PAGE = "[REGEXPTITLE:(?i)dwc]";
 	public static String STORY_PREPARATION = "[REGEXPTITLE:(?i)xml]";
 	public static String WORKFLOW = "[REGEXPTITLE:(?i)prx]";
+	public static String LOGIN = "Connect to";
 	
 	
 	//Message of Window

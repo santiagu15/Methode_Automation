@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="news.co.uk.Main.TC4">
+      <class name="news.co.uk.Main.TC6">
         <methods>
-          <include name="articletimestamp"/>
+          <include name="currenttimestamp"/>
         </methods>
-      </class> <!-- news.co.uk.Main.TC4 -->
+      </class> <!-- news.co.uk.Main.TC6 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

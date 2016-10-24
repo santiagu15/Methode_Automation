@@ -51,4 +51,8 @@ public class StoryPreparation {
 	public static int ARTICLE_SAVE_X = 100;
 	public static int ARTICLE_SAVE_Y = 785;
 	
+	//Label
+	public static int LABEL_X = 37;
+	public static int LABEL_Y = 150;
+	public static String LABEL_CONTENT = "This is for Testing";
 }

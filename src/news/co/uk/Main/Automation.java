@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com.jacob.com.LibraryLoader;
 
 import autoitx4java.AutoItX;
+import news.co.uk.Configuration.Custom;
 import news.co.uk.Configuration.MainMenu;
 import news.co.uk.Configuration.Mouse;
 import news.co.uk.Configuration.SliceTemplate;
@@ -61,7 +62,7 @@ public class Automation {
 		@Test
 		public void app_open() throws Exception{
 		at.run("C:\\Program Files (x86)\\WinBatchScripts\\Methode\\StartMethode.exe", "",AutoItX.SW_SHOW);
-		at.sleep(10000);
+		at.sleep(1000);
 		}
 
 	
@@ -69,7 +70,7 @@ public class Automation {
 		//Selecting the Publishing system
 		@Test
 		public void PublishingSystem() throws Exception{
-		at.winActivate(Title.PS);
+		at.winWaitActive(Title.PS);
 		at.sleep(1000);
 		at.controlFocus(Title.PS, "", PublicationSelection.ID);
 		System.out.println("x");
@@ -78,12 +79,14 @@ public class Automation {
 		at.sleep(2000);
 		at.controlClick(Title.PS, "", PublicationSelection.OK_BTN,  Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, PublicationSelection.OK_BTN_X, PublicationSelection.OK_BTN_Y);
 		System.out.println("Pass");
-		at.sleep(50000);
+		//at.sleep(50000);
 		}
 		
 		//Login
 		@Test
 		public void login() throws Exception{ 
+		at.winWaitActive(Title.LOGIN);
+		at.sleep(2000);
 		at.controlFocus("Connect to", "", "[CLASS:Edit; INSTANCE:1]");
 		at.sleep(1000);
 		at.send("sallen");
@@ -93,13 +96,13 @@ public class Automation {
 		at.sleep(1000);
 		at.controlClick("Connect to", "", "[CLASS:Button; INSTANCE:4]", "left", 1, 31, 12);
 		System.out.println("Login Passed");
-		at.sleep(10000);
+		//at.sleep(10000);
 		}
 		
 		//Message of the day pop-up
 		@Test
 		public void mod() throws Exception{
-		at.winActivate(Title.MOD);
+		at.winWaitActive(Title.MOD);
 		at.sleep(5000);
 		at.controlFocus(Title.MOD, "", "[CLASS:Button; INSTANCE:1]");
 		at.controlClick(Title.MOD, "", "[CLASS:Button; INSTANCE:1]", "left", 1, 28, 12);
@@ -109,7 +112,7 @@ public class Automation {
 		//Create a Page plan
 		@Test
 		public void create_pp() throws Exception{
-		at.winActivate(Title.METHODE);
+		at.winWaitActive(Title.METHODE);
 		at.sleep(2000);
 		
 		//Activate File Menu and opening the quick open option
@@ -124,7 +127,7 @@ public class Automation {
 		
 		// Opening a Page plan
 		public void openpp() throws Exception{
-		at.winActivate(Title.Q_OPEN);
+		at.winWaitActive(Title.Q_OPEN);
 		at.controlFocus(Title.Q_OPEN, "", QuickOpen.PC_ID);
 		at.sleep(2000);
 		}
@@ -134,7 +137,7 @@ public class Automation {
 		public void digital() throws Exception{
 			at.sleep(3000);
 		at.controlCommandShowDropdown(Title.Q_OPEN, "", QuickOpen.PC_ID);
-		at.controlSend(Title.Q_OPEN, "", "", Mouse.DOWN_4X, false);
+		at.controlSend(Title.Q_OPEN, "", "", Mouse.getDown(4), false);
 		at.controlSend(Title.Q_OPEN, "", "", Mouse.ENTER, false);
 		}
 		@Test
@@ -156,7 +159,7 @@ public class Automation {
 		//Selecting the Page
 		at.controlFocus(Title.Q_OPEN, "", QuickOpen.PP_ID);
 		at.controlClick(Title.Q_OPEN, "", QuickOpen.PP_ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, QuickOpen.PP_ID_X, QuickOpen.PP_ID_Y);
-		at.controlSend(Title.Q_OPEN, "", QuickOpen.PP_ID, Mouse.DOWN);
+		at.controlSend(Title.Q_OPEN, "", QuickOpen.PP_ID, Mouse.getDown(1));
 		
 		// Copying the selected page into the notepad
 		/*at.controlSend(Title.Q_OPEN, "", QuickOpen.PP_ID, "^c");
@@ -175,7 +178,7 @@ public class Automation {
 		// Expand the page plan
 		@Test
 		public void pageplan() throws Exception{
-		at.winActivate(Title.PAGE_PLANNER);
+		at.winWaitActive(Title.PAGE_PLANNER);
 		at.controlFocus(Title.PAGE_PLANNER, "", MainPage.PAGE_EXPANDER);
 		at.controlClick(Title.PAGE_PLANNER, "", MainPage.PAGE_EXPANDER, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.PAGE_EXPANDER_X, MainPage.PAGE_EXPANDER_Y);
 		at.sleep(4000);
@@ -191,7 +194,7 @@ public class Automation {
 		public void selecting_buisness() throws Exception{
 		at.controlFocus(Title.PAGE_PLANNER, "", MainPage.Bus_Section);
 		at.controlClick(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, MainPage.Bus_Section_X, MainPage.Bus_Section_Y);
-		at.controlSend(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.DOWN);
+		at.controlSend(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.getDown(1));
 		at.controlSend(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.ENTER);
 		at.sleep(3000);
 		at.controlClick(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, MainPage.Bus_Section_X, MainPage.Bus_Section_Y);
@@ -201,12 +204,12 @@ public class Automation {
 		//Selecting a candidate browser in the dwp page
 		@Test
 		public void candidate_browser() throws Exception{
-		at.winActivate(Title.DIGITAL_PAGE);
+		at.winWaitActive(Title.DIGITAL_PAGE);
 		at.sleep(3000);
 		at.controlFocus(Title.DIGITAL_PAGE, "", MainMenu.ID);
 		at.controlClick(Title.DIGITAL_PAGE, "", MainMenu.ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainMenu.VIEW_CORD_X, MainMenu.VIEW_CORD_Y);
 		at.sleep(2000);
-		at.controlSend(Title.DIGITAL_PAGE, "", MainMenu.ID, Mouse.DOWN);
+		at.controlSend(Title.DIGITAL_PAGE, "", MainMenu.ID, Mouse.getDown(1));
 		at.sleep(5000);
 		at.controlSend(Title.DIGITAL_PAGE, "", MainMenu.ID, Mouse.ENTER);
 		at.sleep(3000);
@@ -241,11 +244,11 @@ public class Automation {
 		// Creating a story
 		@Test
 		public void story_creation() throws Exception{
-		at.winActivate(Title.TEMPLATE_PAGE);
+		at.winWaitActive(Title.TEMPLATE_PAGE);
 		at.controlFocus(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME);
 		at.sleep(3000);
 		at.controlClick(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, Template.SLICE_FRAME_X, Template.SLICE_FRAME_Y);
-		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.DOWN_3X);
+		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.getDown(3));
 		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.ENTER);
 		at.sleep(3000);
 		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.ENTER);
@@ -259,7 +262,7 @@ public class Automation {
 		at.winActivate(Title.SAVE_AS);
 		at.controlFocus(Title.SAVE_AS, "", NewStory.FILENAME);
 		at.controlClick(Title.SAVE_AS, "", NewStory.FILENAME, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, NewStory.FILENAME_X, NewStory.FILENAME_Y);
-		at.ControlSetText(Title.SAVE_AS, "", NewStory.FILENAME, "SA_Auto");
+		at.ControlSetText(Title.SAVE_AS, "", NewStory.FILENAME, "SA_Automa");
 		at.sleep(2000);
 		at.controlFocus(Title.SAVE_AS, "", NewStory.SAVE_AS);
 		at.controlClick(Title.SAVE_AS, "", NewStory.SAVE_AS, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, NewStory.SAVE_AS_X, NewStory.SAVE_AS_Y);
@@ -269,7 +272,7 @@ public class Automation {
 		at.controlClick(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, Template.SLICE_FRAME_OUTSIDE_X, Template.SLICE_FRAME_OUTSIDE_Y);
 		at.sleep(4000);
 		at.controlClick(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, Template.SLICE_FRAME_X, Template.SLICE_FRAME_Y);
-		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.DOWN);
+		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.getDown(1));
 		at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.ENTER);
 		at.sleep(5000);
 		}
@@ -277,7 +280,7 @@ public class Automation {
 		//Channel Copy
 		@Test
 		public void channelcopy() throws Exception{
-		at.winActivate(Title.CHANNEL_COPY);
+		at.winWaitActive(Title.CHANNEL_COPY);
 		at.sleep(5000);
 		at.controlFocus(Title.CHANNEL_COPY, "", ChannelCopy.CHANNEL_COPY);
 		at.controlClick(Title.CHANNEL_COPY, "", ChannelCopy.CHANNEL_COPY, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, ChannelCopy.CHANNEL_COPY_X, ChannelCopy.CHANNEL_COPY_Y);
@@ -290,7 +293,7 @@ public class Automation {
 		//Preparing a Story
 		@Test
 		public void preparing_story() throws Exception{
-		at.winActivate(Title.STORY_PREPARATION);
+		at.winWaitActive(Title.STORY_PREPARATION);
 		at.controlFocus(Title.STORY_PREPARATION, "", Template.SLICE_FRAME);
 		at.controlClick(Title.STORY_PREPARATION, "", Template.SLICE_FRAME, Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, StoryPreparation.HEADLINE_X, StoryPreparation.HEADLINE_Y);
 		at.sleep(2000);
@@ -305,7 +308,7 @@ public class Automation {
 		at.controlFocus(Title.STORY_PREPARATION, "", MainMenu.ID);
 		at.controlClick(Title.STORY_PREPARATION, "", MainMenu.ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainMenu.VIEW_CORD_X, MainMenu.VIEW_CORD_Y);
 		at.sleep(2000);
-		at.controlSend(Title.STORY_PREPARATION, "", MainMenu.ID, Mouse.DOWN);
+		at.controlSend(Title.STORY_PREPARATION, "", MainMenu.ID, Mouse.getDown(1));
 		at.sleep(4000);
 		at.controlSend(Title.STORY_PREPARATION, "", MainMenu.ID, Mouse.ENTER);
 		at.sleep(3000);
@@ -316,9 +319,9 @@ public class Automation {
 		at.sleep(5000);
 		//at.controlFocus(Title.STORY_PREPARATION, "", StoryPreparation.SELECTING_IMAGE);
 		at.sleep(2000);
-		at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.DOWN, false);
+		at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.getDown(1), false);
 		at.sleep(3000);
-		at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.DOWN, false);
+		at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.getDown(1), false);
 		at.sleep(2000);
 		at.mouseClickDrag(Mouse.LEFT_CLICK, 1700, 335, 400, 600, 2000);
 		at.sleep(2000);
@@ -338,7 +341,7 @@ public class Automation {
 		// Clicking on the preview button
 		@Test
 		public void preview_publish() throws Exception{
-		at.winActivate(Title.STORY_PREPARATION);
+		at.winActive(Title.STORY_PREPARATION);
 		at.controlFocus(Title.STORY_PREPARATION, "", StoryPreparation.PREVIEW_BUTTON);
 		at.sleep(2000);
 		at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.PREVIEW_BUTTON, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.PREVIEW_BUTTON_X, StoryPreparation.PREVIEW_BUTTON_Y);
@@ -360,7 +363,7 @@ public class Automation {
 		
 		
 		// Published the article
-		at.winWait(Title.STORY_PREPARATION);
+		at.winActivate(Title.STORY_PREPARATION);
 		at.controlFocus(Title.STORY_PREPARATION, "", StoryPreparation.PREVIEW_BUTTON);
 		at.sleep(2000);
 		at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.PREVIEW_BUTTON, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, 668, 12);
@@ -395,7 +398,7 @@ public class Automation {
 			at.sleep(3000);
 			at.controlClick(Title.STORY_PREPARATION, "", MainMenu.ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainMenu.FILE_CORD_X, MainMenu.FILE_CORD_Y);
 			at.sleep(4000);
-			at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.DOWN_6X);
+			at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.getDown(6));
 			at.sleep(3000);
 			at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.ENTER);
 			at.sleep(4000);
@@ -411,7 +414,7 @@ public class Automation {
 			at.sleep(3000);
 			at.controlClick(Title.TEMPLATE_PAGE, "", MainMenu.ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainMenu.FILE_CORD_X, MainMenu.FILE_CORD_Y);
 			at.sleep(4000);
-			at.controlSend(Title.TEMPLATE_PAGE, "", "", Mouse.DOWN_5X);
+			at.controlSend(Title.TEMPLATE_PAGE, "", "", Mouse.getDown(5));
 			at.sleep(3000);
 			at.controlSend(Title.TEMPLATE_PAGE, "", "", Mouse.ENTER);
 			at.sleep(4000);
@@ -425,7 +428,7 @@ public class Automation {
 			at.sleep(3000);
 			at.controlClick(Title.DIGITAL_PAGE, "", MainMenu.ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainMenu.FILE_CORD_X, MainMenu.FILE_CORD_Y);
 			at.sleep(4000);
-			at.controlSend(Title.DIGITAL_PAGE, "", "", Mouse.DOWN_5X);
+			at.controlSend(Title.DIGITAL_PAGE, "", "", Mouse.getDown(5));
 			at.sleep(3000);
 			at.controlSend(Title.DIGITAL_PAGE, "", "", Mouse.ENTER);
 			at.sleep(4000);
@@ -444,7 +447,7 @@ public class Automation {
 			at.controlFocus(Title.PAGE_PLANNER, "", MainPage.WORKFLOW);
 			at.controlClick(Title.PAGE_PLANNER, "", MainPage.WORKFLOW, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, MainPage.WORKFLOW_X, MainPage.WORKFLOW_Y);
 			at.sleep(4000);
-			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.DOWN_12X);
+			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.getDown(12));
 			at.sleep(2000);
 			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.ENTER);
 			at.sleep(3000);
@@ -475,7 +478,7 @@ public class Automation {
 			
 			//String ptitle  = "cps-render-sip.elb.tnl-dev.ntch.co.uk/preview/article/5fdc6a04-8704-11e6-9ed4-f2b74109bf85?t=1475548325574";
 			// Verifying in the Preview
-			at.winWaitActive(Title.PREVIEW_BROWSER_EDITION);
+			at.winActive(Title.PREVIEW_BROWSER_EDITION);
 			at.sleep(2000);
 			at.controlClick(Title.PREVIEW_BROWSER_EDITION, "", "", Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, 400, 45);
 			at.sleep(3000);
@@ -518,18 +521,18 @@ public class Automation {
 			at.sleep(3000);
 			at.winActivate(Title.TEMPLATE_PAGE);
 			at.controlClick(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, Template.SLICE_FRAME_X, Template.SLICE_FRAME_Y);
-			at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.DOWN);
+			at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.getDown(1));
 			at.controlSend(Title.TEMPLATE_PAGE, "", Template.SLICE_FRAME, Mouse.ENTER);
 			at.sleep(5000);
 		}
 		
 		@Test
 		public void q_metadata() throws Exception{
-			at.winActivate(Title.STORY_PREPARATION);
+			at.winActive(Title.STORY_PREPARATION);
 			at.sleep(3000);
 			at.controlClick(Title.STORY_PREPARATION, "", MainMenu.ID, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainMenu.FILE_CORD_X, MainMenu.FILE_CORD_Y);
 			at.sleep(4000);
-			at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.DOWN_15X);
+			at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.getDown(15));
 			at.sleep(3000);
 			at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.ENTER);
 			at.sleep(4000);
@@ -537,7 +540,7 @@ public class Automation {
 		
 		@Test
 		public void editionmetadata() throws Exception{
-			at.winActivate(Title.PAGE_PLANNER);
+			/*at.winActivate(Title.PAGE_PLANNER);
 			at.sleep(3000);
 			at.controlFocus(Title.PAGE_PLANNER, "", MainPage.Bus_Section);;
 			at.controlClick(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.Bus_Section_X, MainPage.Bus_Section_Y);
@@ -554,13 +557,91 @@ public class Automation {
 			at.sleep(3000);
 			at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.SET_EDITION_DATE_X, MainPage.SET_EDITION_DATE_Y);
 			at.sleep(3000);
-			at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.SET_EDITION_TIME_X, MainPage.SET_EDITION_TIME_Y);
+			at.controlSend(Title.PAGE_PLANNER, "", "", "^a");
 			at.sleep(3000);
-			at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.DONE_EDITION_X, MainPage.DONE_EDITION_Y);
+			at.controlSend(Title.PAGE_PLANNER, "", "", " 15/10/2016 09:00 ");
+			at.controlSend(Title.PAGE_PLANNER, "", "", "^a");
+			at.controlSend(Title.PAGE_PLANNER, "", "", " 15/10/2016 09:00 ");
+			at.controlSend(Title.PAGE_PLANNER, "", "", "^a");
+			at.controlSend(Title.PAGE_PLANNER, "", "", " 15/10/2016 09:00 ");*/
+			//at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.UPDATETEXT_EDITION_METADATA_X, MainPage.UPDATETEXT_EDITION_METADATA_Y);
+			/*at.sleep(3000);
+			at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.SET_EDITION_DATE_X, MainPage.SET_EDITION_DATE_Y);
 			at.sleep(3000);
-			at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.SET_NOW_X, MainPage.SET_NOW_Y);
+			at.controlSend(Title.PAGE_PLANNER, "", "", "^a");
 			at.sleep(3000);
-			at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.EDITION_SAVE_X, MainPage.EDITION_SAVE_Y);
+			
+			Thread.sleep(5000);
+			at.controlSend(Title.PAGE_PLANNER, "", "", " 15/10/2016 09:00 ");*/
+			//at.sleep(3000);
+			//Thread.sleep(5000);
+			/*at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.SET_EDITION_TIME_X, MainPage.SET_EDITION_TIME_Y);
+			at.sleep(3000);*/
+			//at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.DONE_EDITION_X, MainPage.DONE_EDITION_Y);
+			//at.sleep(3000);
+			/*at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.SET_NOW_X, MainPage.SET_NOW_Y);
+			at.sleep(3000);*/
+			//at.controlClick(Title.PAGE_PLANNER, "", MainPage.SET_EDITION_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, MainPage.EDITION_SAVE_X, MainPage.EDITION_SAVE_Y);
+			at.winActivate(Title.PAGE_PLANNER);
+			at.sleep(3000);
+			at.controlFocus(Title.PAGE_PLANNER, "", MainPage.OVERALLEDITION);
+			at.controlClick(Title.PAGE_PLANNER, "", MainPage.OVERALLEDITION, Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, MainPage.OVERALLEDITION_X, MainPage.OVERALLEDITION_Y);
+			at.sleep(3000);
+			at.winActivate(Title.PAGE_PLANNER);
+			at.sleep(2000);
+			at.controlFocus(Title.PAGE_PLANNER, "", MainPage.WORKFLOW);
+			at.controlClick(Title.PAGE_PLANNER, "", MainPage.WORKFLOW, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, MainPage.WORKFLOW_X, MainPage.WORKFLOW_Y);
+			at.sleep(4000);
+			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.getDown(9));
+			at.sleep(2000);
+			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.ENTER);
+			at.sleep(3000);
+			at.winActivate("Metadata");
+			at.sleep(2000);
+			at.controlSend("Metadata", "", "", Mouse.getDown(6));
+			at.sleep(2000);
+			at.controlSend("Metadata", "", "", "{TAB}");
+			at.sleep(3000);
+			at.controlSend("Metadata", "", "", "15");
+			at.controlSend("Metadata", "", "", "{RIGHT}");
+			at.sleep(3000);
+			at.controlSend("Metadata", "", "", "Oct");
+			at.controlSend("Metadata", "", "", "{RIGHT}");
+			at.sleep(3000);
+			at.controlSend("Metadata", "", "", "2016");
+			at.sleep(3000);
+			at.controlSend("Metadata", "", "", "{RIGHT}");
+			at.controlSend("Metadata", "", "", "09");
+			at.sleep(3000);
+			at.controlSend("Metadata", "", "", "{RIGHT}");
+			at.controlSend("Metadata", "", "", "00");
+			at.sleep(3000);
+			at.controlSend("Metadata", "", "", "{RIGHT}");
+			at.controlSend("Metadata", "", "", "00");
+			//at.controlFocus("Metadata - GENERAL-01.prx", "", "[ID:3]");
+			//at.controlClick("Metadata - GENERAL-01.prx", "", "", Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, 970, 446);
+			//at.mouseMove(970, 446,2000);
+			//at.mouseClick(Mouse.LEFT_CLICK, 970, 446, 1, 200);
+			//at.ControlSetText("Metadata - GENERAL-01.prx", "", "[ID:3]", "15 Oct 2016 - 09:00:00");
+			at.sleep(3000);
+			at.controlFocus("Metadata - GENERAL-01.prx", "", "[ID:1]");
+			at.controlClick("Metadata - GENERAL-01.prx", "", "[ID:1]", Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, 31, 9);
+			at.sleep(3000);
+			at.winActivate(Title.PAGE_PLANNER);
+			at.sleep(3000);
+			at.controlFocus(Title.PAGE_PLANNER, "", MainPage.OVERALLEDITION);
+			at.controlClick(Title.PAGE_PLANNER, "", MainPage.OVERALLEDITION, Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, MainPage.OVERALLEDITION_X, MainPage.OVERALLEDITION_Y);
+			at.sleep(3000);
+			at.winActivate(Title.PAGE_PLANNER);
+			at.sleep(2000);
+			at.controlFocus(Title.PAGE_PLANNER, "", MainPage.WORKFLOW);
+			at.controlClick(Title.PAGE_PLANNER, "", MainPage.WORKFLOW, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, MainPage.WORKFLOW_X, MainPage.WORKFLOW_Y);
+			at.sleep(4000);
+			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.getDown(11));
+			at.sleep(2000);
+			at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.ENTER);
+			at.sleep(3000);
+			
 		}
 		
 		@Test
@@ -579,6 +660,36 @@ public class Automation {
 			
 		}
 		
+		@Test
+		public void currentimestamp() throws Exception{
+			Custom cust = new Custom();
+			String current_timestamp = cust.currentimestamp();
+			at.winActive(Title.STORY_PREPARATION);
+			at.sleep(3000);
+			at.controlFocus(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE);
+			at.sleep(3000);
+			at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.SET_ARTICLE_DATE_X, StoryPreparation.SET_ARTICLE_DATE_Y);
+			at.sleep(3000);
+			at.controlSend(Title.STORY_PREPARATION, "", "", "^a");
+			at.sleep(3000);
+			at.controlSend(Title.STORY_PREPARATION, "", "", " "+current_timestamp+" ");
+			at.sleep(4000);
+			at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.DONE_ARTICLE_X, StoryPreparation.DONE_ARTICLE_Y);
+			at.sleep(3000);
+			at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.ARTICLE_SAVE_X, StoryPreparation.ARTICLE_SAVE_Y);
+		}
+		
+		@Test
+		public void adding_label() throws Exception{
+			at.winActivate(Title.STORY_PREPARATION);
+			at.sleep(2000);
+			at.controlFocus(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE);
+			at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.LABEL_X, StoryPreparation.LABEL_Y);
+			at.sleep(3000);
+			at.controlSend(Title.STORY_PREPARATION, "", "", StoryPreparation.LABEL_CONTENT);
+		}
+		
+	
 		@Test
 		public void driverclose() throws Exception{
 			driver.quit();

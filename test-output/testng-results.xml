@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="755835" started-at="2016-10-18T08:56:07Z" finished-at="2016-10-18T09:08:43Z">
+  <suite name="Default suite" duration-ms="70159" started-at="2016-10-21T14:54:34Z" finished-at="2016-10-21T14:55:44Z">
     <groups>
     </groups>
-    <test name="Times_Digital" duration-ms="755835" started-at="2016-10-18T08:56:07Z" finished-at="2016-10-18T09:08:43Z">
-      <class name="news.co.uk.Main.TC1">
-        <test-method status="PASS" signature="tc1()[pri:0, instance:news.co.uk.Main.TC1@735b5592]" name="tc1" duration-ms="401939" started-at="2016-10-18T09:56:07Z" finished-at="2016-10-18T10:02:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc1 -->
-      </class> <!-- news.co.uk.Main.TC1 -->
-      <class name="news.co.uk.Main.TC2">
-        <test-method status="PASS" signature="tc2()[pri:0, instance:news.co.uk.Main.TC2@5419f379]" name="tc2" duration-ms="82427" started-at="2016-10-18T10:02:49Z" finished-at="2016-10-18T10:04:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc2 -->
-      </class> <!-- news.co.uk.Main.TC2 -->
-      <class name="news.co.uk.Main.TC5">
-        <test-method status="PASS" signature="update_article_timestamp()[pri:0, instance:news.co.uk.Main.TC5@4f933fd1]" name="update_article_timestamp" duration-ms="82137" started-at="2016-10-18T10:07:21Z" finished-at="2016-10-18T10:08:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- update_article_timestamp -->
-      </class> <!-- news.co.uk.Main.TC5 -->
+    <test name="Default test" duration-ms="70159" started-at="2016-10-21T14:54:34Z" finished-at="2016-10-21T14:55:44Z">
       <class name="news.co.uk.Main.TC3">
-        <test-method status="PASS" signature="ps_update()[pri:0, instance:news.co.uk.Main.TC3@7dc7cbad]" name="ps_update" duration-ms="123530" started-at="2016-10-18T10:04:11Z" finished-at="2016-10-18T10:06:15Z">
+        <test-method status="PASS" signature="ps_update()[pri:0, instance:news.co.uk.Main.TC3@4520ebad]" name="ps_update" duration-ms="70142" started-at="2016-10-21T15:54:34Z" finished-at="2016-10-21T15:55:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ps_update -->
       </class> <!-- news.co.uk.Main.TC3 -->
-      <class name="news.co.uk.Main.TC4">
-        <test-method status="PASS" signature="articletimestamp()[pri:0, instance:news.co.uk.Main.TC4@d2cc05a]" name="articletimestamp" duration-ms="65777" started-at="2016-10-18T10:06:15Z" finished-at="2016-10-18T10:07:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- articletimestamp -->
-      </class> <!-- news.co.uk.Main.TC4 -->
-    </test> <!-- Times_Digital -->
-  </suite> <!-- Suite1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
