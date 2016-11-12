@@ -21,6 +21,19 @@ public class Mouse {
 		}
 		return name.toString();
 	}
+	
+	public static String getTab(int step) {
+		StringBuilder name = new StringBuilder();
+		int count = 0;
+		for(;;) {
+			if (count == step) {
+				break;
+			}
+			name.append("{TAB}");
+			count++;
+		}
+		return name.toString();
+	}
 	/*public static String DOWN = "{DOWN}";
 	public static String DOWN_2X = "{DOWN}{DOWN}";
 	public static String DOWN_3X = "{DOWN}{DOWN}{DOWN}";

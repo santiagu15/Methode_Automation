@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite1]">
+  <test name="Times_Digital(failed)">
     <classes>
-      <class name="news.co.uk.Main.TC6">
+      <class name="news.co.uk.Main.TE1">
         <methods>
-          <include name="currenttimestamp"/>
+          <include name="launching"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- news.co.uk.Main.TC6 -->
+      </class> <!-- news.co.uk.Main.TE1 -->
+      <class name="news.co.uk.Main.TE2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="friendlyURL"/>
+          <include name="beforeMethod"/>
+          <include name="label"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE2 -->
+      <class name="news.co.uk.Main.TE3">
+        <methods>
+          <include name="links"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE3 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Times_Digital(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

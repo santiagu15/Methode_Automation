@@ -14,6 +14,9 @@ public class MainPage {
 	public static int Bus_Section_X = 134;
 	public static int Bus_Section_Y = 110;
 	
+	public static int Sco_Section_X = 470;
+	public static int Sco_Section_Y = 250;
+	
 	public static String WORKFLOW = "[ID:200]";
 	public static int WORKFLOW_X = 27;
 	public static int WORKFLOW_Y = 33;
@@ -38,6 +41,9 @@ public class MainPage {
 	public static int EDITION_METADATA_X = 437;
 	public static int EDITION_METADATA_Y = 14; 
 	
+	public static int SLOT_SECTION_X = 459;
+	public static int SLOT_SECTION_Y = 14;
+	
 	public static String SET_EDITION_DATE = "[CLASS:Internet Explorer_Server; INSTANCE:1]";
 	public static int SET_EDITION_DATE_X = 153;
 	public static int SET_EDITION_DATE_Y = 142;
@@ -52,6 +58,7 @@ public class MainPage {
 	public static int DONE_EDITION_X = 272;
 	public static int DONE_EDITION_Y = 449;
 	
+	
 	public static int SET_NOW_X = 62;
 	public static int SET_NOW_Y = 147;
 	
@@ -61,5 +68,26 @@ public class MainPage {
 	public static String OVERALLEDITION = "[ID:59648]";
 	public static int OVERALLEDITION_X = 312;
 	public static int OVERALLEDITION_Y = 317;
+	
+	public static String INSERT_PAGE = "[ID:59398]";
+	public static int INSERT_PAGE_X = 140;
+	public static int INSERT_PAGE_Y = 12;
+	
+	
+	public static String INSERTPAGES = "[ID:906]";
+	public static int INSERTPAGES_X = 77;
+	public static int INSERTPAGES_Y = 10;
+	
+	public static String HIDE_SECTION = "[CLASS:Internet Explorer_Server; INSTANCE:1]";
+	public static int HIDE_SECTION_X = 49;
+	public static int HIDE_SECTION_Y = 79;
+	
+	public static int HIDE_SECTION_OK_X = 107;
+	public static int HIDE_SECTION_OK_Y = 892;
+	
+	public static int SPECIAL_SECTION_X = 62;
+	public static int SPECIAL_SECTION_Y = 189;
+	
+	public static String SPECIAL_SECTION_NAME = "Style";
 	
 }

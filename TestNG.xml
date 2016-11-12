@@ -1,12 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite1" verbose="1" >
-  <test name="Times_Digital" >
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="false">
+  <test name="Times_Digital 1" parallel="false" preserve-order="true" verbose="2">
     <classes>
-       <class name="news.co.uk.Main.TC1" />
-       <class name="news.co.uk.Main.TC2" />
-       <class name="news.co.uk.Main.TC3" />
-       <class name="news.co.uk.Main.TC4" />
-       <class name="news.co.uk.Main.TC5" />
+	   <class name="news.co.uk.Main.TE1" />
+       <class name="news.co.uk.Main.TE2" />
+       <class name="news.co.uk.Main.TE3" /> 
+       <class name="news.co.uk.Main.TE4" />
+       <!-- <class name="news.co.uk.Main.TE5" > 
+       <methods>
+        <include name="news.co.uk.Main.TE5.secondary_1" />
+        <include name="news.co.uk.Main.TE5.secondary_2" />
+        <include name="news.co.uk.Main.TE5.secondary_3" />
+        <include name="news.co.uk.Main.TE5.secondary_4" />
+        <include name="news.co.uk.Main.TE5.secondary_preview" />
+      </methods>
+      </class>
+       <class name="news.co.uk.Main.TE6" > 
+       <methods>
+        <include name="news.co.uk.Main.TE6.existing_stories1" />
+        <include name="news.co.uk.Main.TE6.existing_stories1" />
+        <include name="news.co.uk.Main.TE6.close" />
+      </methods>
+      </class>
+        <class name="news.co.uk.Main.TE7" >
+        <methods>
+        <include name="news.co.uk.Main.TE7.Hidesection" />
+        <include name="news.co.uk.Main.TE7.edition_preview" />
+      </methods>
+      </class>
+      
+       <class name="news.co.uk.Main.TE8" />
+       <methods>
+        <include name="news.co.uk.Main.TE8.ps_update" />
+      </methods>
+       <class name="news.co.uk.Main.TE9" >
+       <methods>
+        <include name="news.co.uk.Main.TE9.scotland_section" />
+        <include name="news.co.uk.Main.TE9.adding_text" />
+        <include name="news.co.uk.Main.TE9.creating_story" />
+        <include name="news.co.uk.Main.TE9.preview" />
+        <include name="news.co.uk.Main.TE9.closing" />
+      </methods>
+      </class>
+       <class name="news.co.uk.Main.TX" />
+       <methods>
+       <include name="news.co.uk.Main.TX.special_section" />
+        </methods> -->
     </classes>
   </test>
 </suite>

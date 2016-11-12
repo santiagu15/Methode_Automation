@@ -9,6 +9,7 @@ public class Title {
 	public static String STORY_PREPARATION = "[REGEXPTITLE:(?i)xml]";
 	public static String WORKFLOW = "[REGEXPTITLE:(?i)prx]";
 	public static String LOGIN = "Connect to";
+	public static String WORKFLOW_LAYOUT = "[REGEXPTITLE:(?i)dwp]";
 	
 	
 	//Message of Window
@@ -42,4 +43,16 @@ public class Title {
 	
 	public static String CONFIRM_POPUP = "Methode";
 	
+	public static String INSERTPAGES = "Insert Pages";
+	
+	//Quick Access
+	public static String QUICKACCESS = "New 'Methode' query";
+	
+	//Assert Image
+	
+	public static String ASSERT_IMAGE = "Asset Insert";
+	
+	//cropping
+	
+	public static String CROPING = "Alert";
 }
