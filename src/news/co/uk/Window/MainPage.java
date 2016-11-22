@@ -63,7 +63,7 @@ public class MainPage {
 	public static int SET_NOW_Y = 147;
 	
 	public static int EDITION_SAVE_X = 100;
-	public static int EDITION_SAVE_Y = 890;
+	public static int EDITION_SAVE_Y = 860;
 	
 	public static String OVERALLEDITION = "[ID:59648]";
 	public static int OVERALLEDITION_X = 312;
@@ -82,8 +82,8 @@ public class MainPage {
 	public static int HIDE_SECTION_X = 49;
 	public static int HIDE_SECTION_Y = 79;
 	
-	public static int HIDE_SECTION_OK_X = 107;
-	public static int HIDE_SECTION_OK_Y = 892;
+	public static int HIDE_SECTION_OK_X = 100;
+	public static int HIDE_SECTION_OK_Y = 863;
 	
 	public static int SPECIAL_SECTION_X = 62;
 	public static int SPECIAL_SECTION_Y = 189;

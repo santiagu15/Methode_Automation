@@ -10,7 +10,7 @@ import news.co.uk.Window.StoryPreparation;
 import news.co.uk.Window.Template;
 
 public class TE5 extends AppLauncher{
-		@Test
+		@Test(priority=1)
 		public void secondary_2_2_template() throws Exception{
 			Automation auto = new Automation();
 			auto.open_section(MainPage.Bus_Section_X, MainPage.Bus_Section_Y);
@@ -57,8 +57,8 @@ public class TE5 extends AppLauncher{
 			auto.storypreparationclose();
 			/*auto.chromeiniti();
 			Thread.sleep(2000);
-			auto.template_preview();
-			Thread.sleep(3000);*/
+			auto.template_preview();*/
+			Thread.sleep(3000);
 			auto.templatepageclose();
 			Thread.sleep(3000);
 			auto.digitalpageclose();

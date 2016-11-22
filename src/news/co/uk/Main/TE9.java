@@ -10,10 +10,10 @@ import news.co.uk.Window.StoryPreparation;
 import news.co.uk.Window.Template;
 
 public class TE9 extends AppLauncher{
-	@Test
+	@Test (priority =1)
 	public void scotland_section_Inline_image() throws Exception{
 		Automation auto = new Automation();
-		auto.insert_section(1);
+		auto.insert_section(1,MainPage.Bus_Section_X, MainPage.Bus_Section_Y);
 		auto.scotlant(8);
 		auto.selecting_buisness(MainPage.Sco_Section_X, MainPage.Sco_Section_X);
 		auto.swap_section();
@@ -41,11 +41,11 @@ public class TE9 extends AppLauncher{
 		Thread.sleep(3000);
 		auto.q_metadata();
 		Thread.sleep(3000);
-		auto.article_timestamp();
-		/*auto.chromeiniti();
+		/*auto.article_timestamp();
+		auto.chromeiniti();
 		Thread.sleep(3000);
-		auto.preview_publish();*/
-		Thread.sleep(3000);
+		auto.preview_publish();
+		Thread.sleep(3000);*/
 		auto.storypreparationclose();
 		Thread.sleep(3000);
 		auto.templatepageclose();

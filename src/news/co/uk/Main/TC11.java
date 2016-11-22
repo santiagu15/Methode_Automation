@@ -14,7 +14,7 @@ public class TC11 extends AppLauncher{
 	@Test
 	public void scotland_section() throws Exception{
 		Automation auto = new Automation();
-		auto.insert_section(1);
+		//auto.insert_section(1);
 		auto.scotlant(8);
 		auto.selecting_buisness(MainPage.Sco_Section_X, MainPage.Sco_Section_X);
 		auto.swap_section();

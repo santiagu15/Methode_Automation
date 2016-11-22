@@ -7,14 +7,14 @@ import com.extentReportManager.AppLauncher;
 
 public class TE7 extends AppLauncher{
 
-	@Test
+	@Test(priority=1)
 	public void Hidesection() throws Exception{
 		Automation auto = new Automation();
 		auto.hide_section();
-		auto.workflow_layout();
+		auto.workflow_layout(12);
 		auto.workflowdone_layout();
-		auto.chromeiniti();
+		/*auto.chromeiniti();
 		auto.Edition();
-		Assert.assertTrue(auto.hide_sections(),"Section is displayed");
+		Assert.assertTrue(auto.hide_sections(),"Section is displayed");*/
 	}
 }

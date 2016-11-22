@@ -11,7 +11,7 @@ public class TC3 extends AppLauncher {
 		Automation auto = new Automation();
 		auto.editionmetadata();
 		Thread.sleep(2000);
-		auto.workflow_layout();
+	//	auto.workflow_layout();
 		Thread.sleep(3000);
 		auto.workflowdone_layout();
 		Thread.sleep(3000);

@@ -11,7 +11,7 @@ public class TC21 extends AppLauncher{
 	public void Hidesection() throws Exception{
 		Automation auto = new Automation();
 		auto.hide_section();
-		auto.workflow_layout();
+		//auto.workflow_layout();
 		auto.workflowdone_layout();
 		auto.chromeiniti();
 		auto.Edition();

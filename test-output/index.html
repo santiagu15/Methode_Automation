@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,11 +111,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="news.co.uk.Main.TE4" hash-for-method="dummy">dummy</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="news.co.uk.Main.TE2" hash-for-method="label_friendurl">label_friendurl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -131,21 +126,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">news.co.uk.Main.TE4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dummy">
-                  </a> <!-- dummy -->
-                  <span class="method-name">dummy</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -206,8 +186,6 @@
       &lt;class name=&quot;news.co.uk.Main.TE1&quot;/&gt;
       &lt;class name=&quot;news.co.uk.Main.TE2&quot;/&gt;
       &lt;class name=&quot;news.co.uk.Main.TE3&quot;/&gt;
-      &lt;class name=&quot;news.co.uk.Main.TE4&quot;/&gt;
-      &lt;class name=&quot;news.co.uk.Main.TE5&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Times_Digital 1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -221,7 +199,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Times_Digital 1 (5 classes)</span>
+                <span class="test-name">Times_Digital 1 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,28 +225,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'adding_related_link')
 data.setCell(0, 2, 'news.co.uk.Main.TE3')
-data.setCell(0, 3, 349570);
+data.setCell(0, 3, 393064);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Publishing_system')
 data.setCell(1, 2, 'news.co.uk.Main.TE1')
-data.setCell(1, 3, 328248);
+data.setCell(1, 3, 366679);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dummy')
-data.setCell(2, 2, 'news.co.uk.Main.TE4')
-data.setCell(2, 3, 186080);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'label_friendurl')
-data.setCell(3, 2, 'news.co.uk.Main.TE2')
-data.setCell(3, 3, 118324);
+data.setCell(2, 1, 'label_friendurl')
+data.setCell(2, 2, 'news.co.uk.Main.TE2')
+data.setCell(2, 3, 181870);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 minutes</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -283,27 +257,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">news.co.uk.Main.TE4</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">launching</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">news.co.uk.Main.TE5</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">launching</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">news.co.uk.Main.TE3</span>
               <div class="ignored-methods-div">
@@ -337,67 +293,52 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void news.co.uk.Main.TE1.Publishing_system() throws java.lang.Exception)</span>
-                <span class="method-start">283 ms</span>
+                <span class="method-start">216 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Publishing_system</span>
-                <span class="method-start">286 ms</span>
+                <span class="method-start">219 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=Publishing_system status=SUCCESS method=TE1.Publishing_system()[pri:1, instance:new...)</span>
-                <span class="method-start">328537 ms</span>
+                <span class="method-start">366900 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">news.co.uk.Main.TE2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void news.co.uk.Main.TE2.label_friendurl() throws java.lang.Exception)</span>
-                <span class="method-start">328782 ms</span>
+                <span class="method-start">367288 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">label_friendurl</span>
-                <span class="method-start">328782 ms</span>
+                <span class="method-start">367288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=label_friendurl status=SUCCESS method=TE2.label_friendurl()[pri:1, instance:news.co...)</span>
-                <span class="method-start">447108 ms</span>
+                <span class="method-start">549160 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">news.co.uk.Main.TE3</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void news.co.uk.Main.TE3.adding_related_link() throws java.lang.Exception)</span>
-                <span class="method-start">447159 ms</span>
+                <span class="method-start">549205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adding_related_link</span>
-                <span class="method-start">447159 ms</span>
+                <span class="method-start">549205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=adding_related_link status=SUCCESS method=TE3.adding_related_link()[pri:1, instance...)</span>
-                <span class="method-start">796730 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">news.co.uk.Main.TE4</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void news.co.uk.Main.TE4.dummy() throws java.lang.Exception)</span>
-                <span class="method-start">796760 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">dummy</span>
-                <span class="method-start">796760 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=dummy status=SUCCESS method=TE4.dummy()[pri:1, instance:news.co.uk.Main.TE4@5622fdf...)</span>
-                <span class="method-start">982842 ms</span>
+                <span class="method-start">942271 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">news.co.uk.Main.TE1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">983201 ms</span>
+                <span class="method-start">942340 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

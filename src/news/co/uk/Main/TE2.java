@@ -18,16 +18,16 @@ public class TE2 extends AppLauncher{
 		Thread.sleep(3000);
 		auto.friendurl();
 		Thread.sleep(3000);
-		/*auto.chromeiniti();
+		auto.chromeiniti();
 		Thread.sleep(3000);
 		auto.preview_publish();
 		Thread.sleep(3000);
-		Assert.assertTrue(auto.amazon_bucket(), "UUID is not displayed");
+		auto.amazon_bucket();
 		Thread.sleep(3000);
-		Assert.assertTrue(auto.amazon_freindurl(), "FriendlyURL is not displayed");
+		auto.amazon_freindurl();
 		Thread.sleep(3000);
-		Assert.assertTrue(auto.LabelS3_bucket(), "Label is not displayed");
-		Thread.sleep(3000);*/
+		auto.LabelS3_bucket();
+		Thread.sleep(3000);
 		auto.storypreparationclose();
 		Thread.sleep(3000);
 		auto.templatepageclose();

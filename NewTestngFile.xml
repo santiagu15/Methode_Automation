@@ -5,13 +5,15 @@
 	   <class name="news.co.uk.Main.TE1" />
 	   <class name="news.co.uk.Main.TE2" />
 	   <class name="news.co.uk.Main.TE3" />
-	   <class name="news.co.uk.Main.TE4" />
+	 <!--   <class name="news.co.uk.Main.TE4" />
 	   <class name="news.co.uk.Main.TE5" />
 	   <class name="news.co.uk.Main.TE6" />
 	   <class name="news.co.uk.Main.TE7" />
 	   <class name="news.co.uk.Main.TE8" />
 	   <class name="news.co.uk.Main.TE9" />
-	   <class name="news.co.uk.Main.TE10" />
+	   <class name="news.co.uk.Main.TE10" /> -->
 	   </classes>
   </test>
 </suite>
+
+

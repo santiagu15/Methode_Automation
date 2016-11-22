@@ -9,7 +9,7 @@ public class TC2 extends AppLauncher{
 	@Test
 	public void tc2() throws Exception{
 		Automation auto = new Automation();
-		auto.workflow_layout();
+		//auto.workflow_layout();
 		Thread.sleep(2000);
 		auto.workflowdone_layout();
 		Thread.sleep(3000);

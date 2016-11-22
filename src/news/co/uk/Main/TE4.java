@@ -10,17 +10,17 @@ import news.co.uk.Window.Template;
 
 public class TE4 extends AppLauncher{
 	
-	@Test
-	public void dummy_Unlink() throws Exception{
+	@Test(priority =1)
+	public void dummy_unlink() throws Exception{
 		Automation auto = new Automation();
 		auto.relink();
 		auto.relink_confirm();
 		Thread.sleep(3000);
-		/*auto.chromeiniti();
+		auto.chromeiniti();
 		Thread.sleep(3000);
 		auto.template_preview();
 		Thread.sleep(3000);
-		auto.dummy();*/
+		auto.dummy();
 		auto.story_creation(NewStory.RE_LINK,Template.SLICE_FRAME_X_LEAD_1_1_2, Template.SLICE_FRAME_Y_LEAD_1_1_2);
 		Thread.sleep(3000);
 		auto.channelcopy();

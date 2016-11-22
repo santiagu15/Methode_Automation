@@ -306,12 +306,12 @@ public class Automation {
 		AppLauncher.at.controlFocus(Title.STORY_PREPARATION, "", Template.SLICE_FRAME);
 		AppLauncher.at.controlClick(Title.STORY_PREPARATION, "", Template.SLICE_FRAME, Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, StoryPreparation.HEADLINE_X, StoryPreparation.HEADLINE_Y);
 		AppLauncher.at.sleep(2000);
-		AppLauncher.at.controlSend(Title.STORY_PREPARATION, "", Template.SLICE_FRAME, storyheadline);
+		AppLauncher.at.controlSend(Title.STORY_PREPARATION, "", "", storyheadline,false);
 		AppLauncher.at.sleep(3000);
 		AppLauncher.at.controlFocus(Title.STORY_PREPARATION, "", Template.SLICE_FRAME);
 		AppLauncher.at.sleep(2000);
 		AppLauncher.at.controlClick(Title.STORY_PREPARATION, "", Template.SLICE_FRAME, Mouse.LEFT_CLICK, Mouse.DOUBLE_CLICK, StoryPreparation.STRAPLINE_X, StoryPreparation.STRAPLINE_Y);
-		AppLauncher.at.controlSend(Title.STORY_PREPARATION, "", Template.SLICE_FRAME, "This is for testing purpose");
+		AppLauncher.at.controlSend(Title.STORY_PREPARATION, "", "", "This is for testing purpose",false);
 		AppLauncher.at.sleep(3000);
 		AppLauncher.at.winActivate(Title.STORY_PREPARATION);
 		AppLauncher.at.controlFocus(Title.STORY_PREPARATION, "", MainMenu.ID);
@@ -452,7 +452,7 @@ public class Automation {
 			AppLauncher.at.winClose(Title.DIGITAL_PAGE);
 			AppLauncher.at.sleep(3000);
 		}
-		public void workflow_layout() throws Exception{
+		public void workflow_layout(int down) throws Exception{
 			AppLauncher.at.winActivate(Title.PAGE_PLANNER);
 			AppLauncher.at.sleep(3000);
 			AppLauncher.at.controlFocus(Title.PAGE_PLANNER, "", MainPage.OVERALLEDITION);
@@ -463,7 +463,7 @@ public class Automation {
 			AppLauncher.at.controlFocus(Title.PAGE_PLANNER, "", MainPage.WORKFLOW);
 			AppLauncher.at.controlClick(Title.PAGE_PLANNER, "", MainPage.WORKFLOW, Mouse.RIGHT_CLICK, Mouse.SINGLE_CLICK, MainPage.WORKFLOW_X, MainPage.WORKFLOW_Y);
 			AppLauncher.at.sleep(4000);
-			AppLauncher.at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.getDown(12));
+			AppLauncher.at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.getDown(down));
 			AppLauncher.at.sleep(2000);
 			AppLauncher.at.controlSend(Title.PAGE_PLANNER, "", "", Mouse.ENTER);
 			AppLauncher.at.sleep(3000);
@@ -804,8 +804,11 @@ public class Automation {
 		AppLauncher.at.sleep(3000);
 		}
 		
-		public void insert_section(int down) throws Exception{
+		public void insert_section(int down,int Section_X, int Section_Y) throws Exception{
 			AppLauncher.at.winActivate(Title.PAGE_PLANNER);
+			AppLauncher.at.sleep(3000);
+			AppLauncher.at.controlFocus(Title.PAGE_PLANNER, "", MainPage.Bus_Section);
+			AppLauncher.at.controlClick(Title.PAGE_PLANNER, "", MainPage.Bus_Section, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, Section_X,Section_Y);
 			AppLauncher.at.sleep(3000);
 			AppLauncher.at.controlFocus(Title.PAGE_PLANNER, "", MainPage.INSERT_PAGE);
 			AppLauncher.at.sleep(3000);
@@ -936,6 +939,8 @@ public class Automation {
 			AppLauncher.at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.MAJOR_TEMPLATE_X, StoryPreparation.MAJOR_TEMPALTE_Y);
 			AppLauncher.at.sleep(3000);
 			AppLauncher.at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.getDown(1));
+			AppLauncher.at.sleep(3000);
+			AppLauncher.at.controlSend(Title.STORY_PREPARATION, "", "", Mouse.ENTER);
 			AppLauncher.at.sleep(3000);
 			AppLauncher.at.controlClick(Title.STORY_PREPARATION, "", StoryPreparation.SET_ARTICLE_DATE, Mouse.LEFT_CLICK, Mouse.SINGLE_CLICK, StoryPreparation.ARTICLE_SAVE_X, StoryPreparation.ARTICLE_SAVE_Y);
 		}

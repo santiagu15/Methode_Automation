@@ -51,8 +51,8 @@ public class StoryPreparation {
 	public static int ARTICLE_SAVE_X = 100;
 	public static int ARTICLE_SAVE_Y = 785;
 	
-	public static int FRIENDURL_X = 96;
-	public static int FRIENDURL_Y = 576;
+	public static int FRIENDURL_X = 42;
+	public static int FRIENDURL_Y = 656;
 	
 	
 	//Label
@@ -76,8 +76,8 @@ public class StoryPreparation {
 	public static int IMAGE_3_Y = 770;
 	
 	//Major Template
-	public static int MAJOR_TEMPLATE_X = 147;
-	public static int MAJOR_TEMPALTE_Y = 377;
+	public static int MAJOR_TEMPLATE_X = 137;
+	public static int MAJOR_TEMPALTE_Y = 402;
 	
 	
 	//negative cropping

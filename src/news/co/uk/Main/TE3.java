@@ -38,17 +38,18 @@ public class TE3 extends AppLauncher{
 		auto.Article_Text();
 		Thread.sleep(3000);
 		auto.storypreparationclose();
+		Thread.sleep(3000);
 		auto.lead_1(Template.SLICE_FRAME_X_LEAD_1_1_2, Template.SLICE_FRAME_Y_LEAD_1_1_2);
 		Thread.sleep(3000);
 		auto.preparing_story(StoryPreparation.HEADLINE_STORY2, 2, StoryPreparation.IMAGE_2_Y);
 		Thread.sleep(3000);
-		/*auto.chromeiniti();
+		auto.chromeiniti();
 		Thread.sleep(3000);
 		auto.preview_publish();
 		Thread.sleep(3000);
-		Assert.assertTrue(auto.browser_relatedlinks(), "Related links is not displayed");
+		auto.browser_relatedlinks();
 		Thread.sleep(2000);
-		Assert.assertTrue(auto.browser_relatedstorylinks(), "Related link story is not displayed");*/
+		auto.browser_relatedstorylinks();
 		auto.storypreparationclose();
 		Thread.sleep(3000);
 		auto.templatepageclose();

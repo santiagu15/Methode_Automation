@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite1]">
-  <test name="Times_Digital(failed)">
+  <test name="Times_Digital 1(failed)">
     <classes>
+      <class name="news.co.uk.Main.TE4">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE4 -->
+      <class name="news.co.uk.Main.TE10">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="special_section"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE10 -->
+      <class name="news.co.uk.Main.TE6">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE6 -->
+      <class name="news.co.uk.Main.TE8">
+        <methods>
+          <include name="Edition_update_9AM"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE8 -->
+      <class name="news.co.uk.Main.TE5">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE5 -->
+      <class name="news.co.uk.Main.TE3">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE3 -->
+      <class name="news.co.uk.Main.TE2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE2 -->
+      <class name="news.co.uk.Main.TE7">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="Hidesection"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- news.co.uk.Main.TE7 -->
       <class name="news.co.uk.Main.TE1">
         <methods>
           <include name="launching"/>
@@ -11,21 +62,12 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- news.co.uk.Main.TE1 -->
-      <class name="news.co.uk.Main.TE2">
+      <class name="news.co.uk.Main.TE9">
         <methods>
-          <include name="afterMethod"/>
-          <include name="friendlyURL"/>
-          <include name="beforeMethod"/>
-          <include name="label"/>
-        </methods>
-      </class> <!-- news.co.uk.Main.TE2 -->
-      <class name="news.co.uk.Main.TE3">
-        <methods>
-          <include name="links"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- news.co.uk.Main.TE3 -->
+      </class> <!-- news.co.uk.Main.TE9 -->
     </classes>
-  </test> <!-- Times_Digital(failed) -->
+  </test> <!-- Times_Digital 1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

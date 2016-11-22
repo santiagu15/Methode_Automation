@@ -49,9 +49,9 @@ public class TE1 extends AppLauncher{
 		Thread.sleep(3000);
 		auto.preparing_story(StoryPreparation.HEADLINE_STORY1,1,StoryPreparation.IMAGE_1_Y);
 		Thread.sleep(3000);
-/*		auto.chromeiniti();
+		auto.chromeiniti();
 		Thread.sleep(3000);
-		auto.preview_publish();*/
+		auto.preview_publish();
 		auto.storypreparationclose();
 		Thread.sleep(3000);
 		auto.templatepageclose();

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="982614" started-at="2016-11-12T12:25:05Z" finished-at="2016-11-12T12:41:27Z">
+  <suite name="Suite1" duration-ms="942108" started-at="2016-11-16T08:45:38Z" finished-at="2016-11-16T09:01:20Z">
     <groups>
     </groups>
-    <test name="Times_Digital 1" duration-ms="982614" started-at="2016-11-12T12:25:05Z" finished-at="2016-11-12T12:41:27Z">
+    <test name="Times_Digital 1" duration-ms="942108" started-at="2016-11-16T08:45:38Z" finished-at="2016-11-16T09:01:20Z">
       <class name="news.co.uk.Main.TE3">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE3@6093dd95]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-12T12:32:32Z" finished-at="2016-11-12T12:32:32Z">
+        <test-method status="PASS" signature="adding_related_link()[pri:1, instance:news.co.uk.Main.TE3@7cd62f43]" name="adding_related_link" duration-ms="393064" started-at="2016-11-16T08:54:47Z" finished-at="2016-11-16T09:01:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adding_related_link -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE3@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-16T08:54:47Z" finished-at="2016-11-16T08:54:47Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="adding_related_link()[pri:1, instance:news.co.uk.Main.TE3@6093dd95]" name="adding_related_link" duration-ms="349570" started-at="2016-11-12T12:32:32Z" finished-at="2016-11-12T12:38:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adding_related_link -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE3@6093dd95]" name="afterMethod" is-config="true" duration-ms="29" started-at="2016-11-12T12:38:21Z" finished-at="2016-11-12T12:38:21Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE3@7cd62f43]" name="afterMethod" is-config="true" duration-ms="41" started-at="2016-11-16T09:01:20Z" finished-at="2016-11-16T09:01:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=adding_related_link status=SUCCESS method=TE3.adding_related_link()[pri:1, instance:news.co.uk.Main.TE3@6093dd95] output={null}]]]>
+                <![CDATA[[TestResult name=adding_related_link status=SUCCESS method=TE3.adding_related_link()[pri:1, instance:news.co.uk.Main.TE3@7cd62f43] output={null}]]]>
               </value>
             </param>
           </params>
@@ -34,40 +34,12 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- news.co.uk.Main.TE3 -->
-      <class name="news.co.uk.Main.TE4">
-        <test-method status="PASS" signature="dummy()[pri:1, instance:news.co.uk.Main.TE4@5622fdf]" name="dummy" duration-ms="186080" started-at="2016-11-12T12:38:21Z" finished-at="2016-11-12T12:41:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dummy -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE4@5622fdf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-12T12:38:21Z" finished-at="2016-11-12T12:38:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void news.co.uk.Main.TE4.dummy() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE4@5622fdf]" name="afterMethod" is-config="true" duration-ms="44" started-at="2016-11-12T12:41:27Z" finished-at="2016-11-12T12:41:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dummy status=SUCCESS method=TE4.dummy()[pri:1, instance:news.co.uk.Main.TE4@5622fdf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- news.co.uk.Main.TE4 -->
       <class name="news.co.uk.Main.TE1">
-        <test-method status="PASS" signature="launching()[pri:0, instance:news.co.uk.Main.TE1@7cd62f43]" name="launching" is-config="true" duration-ms="272" started-at="2016-11-12T12:25:05Z" finished-at="2016-11-12T12:25:05Z">
+        <test-method status="PASS" signature="launching()[pri:0, instance:news.co.uk.Main.TE1@685cb137]" name="launching" is-config="true" duration-ms="204" started-at="2016-11-16T08:45:37Z" finished-at="2016-11-16T08:45:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE1@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2016-11-12T12:25:05Z" finished-at="2016-11-12T12:25:05Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE1@685cb137]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2016-11-16T08:45:38Z" finished-at="2016-11-16T08:45:38Z">
           <params>
             <param index="0">
               <value>
@@ -78,28 +50,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Publishing_system()[pri:1, instance:news.co.uk.Main.TE1@7cd62f43]" name="Publishing_system" duration-ms="328248" started-at="2016-11-12T12:25:05Z" finished-at="2016-11-12T12:30:33Z">
+        <test-method status="PASS" signature="Publishing_system()[pri:1, instance:news.co.uk.Main.TE1@685cb137]" name="Publishing_system" duration-ms="366679" started-at="2016-11-16T08:45:38Z" finished-at="2016-11-16T08:51:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Publishing_system -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE1@7cd62f43]" name="afterMethod" is-config="true" duration-ms="244" started-at="2016-11-12T12:30:33Z" finished-at="2016-11-12T12:30:33Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE1@685cb137]" name="afterMethod" is-config="true" duration-ms="387" started-at="2016-11-16T08:51:44Z" finished-at="2016-11-16T08:51:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Publishing_system status=SUCCESS method=TE1.Publishing_system()[pri:1, instance:news.co.uk.Main.TE1@7cd62f43] output={null}]]]>
+                <![CDATA[[TestResult name=Publishing_system status=SUCCESS method=TE1.Publishing_system()[pri:1, instance:news.co.uk.Main.TE1@685cb137] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:news.co.uk.Main.TE1@7cd62f43]" name="afterSuite" is-config="true" duration-ms="24" started-at="2016-11-12T12:41:28Z" finished-at="2016-11-12T12:41:28Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:news.co.uk.Main.TE1@685cb137]" name="afterSuite" is-config="true" duration-ms="28" started-at="2016-11-16T09:01:20Z" finished-at="2016-11-16T09:01:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- news.co.uk.Main.TE1 -->
       <class name="news.co.uk.Main.TE2">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE2@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-12T12:30:33Z" finished-at="2016-11-12T12:30:33Z">
+        <test-method status="PASS" signature="label_friendurl()[pri:1, instance:news.co.uk.Main.TE2@6a41eaa2]" name="label_friendurl" duration-ms="181870" started-at="2016-11-16T08:51:45Z" finished-at="2016-11-16T08:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- label_friendurl -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:news.co.uk.Main.TE2@6a41eaa2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-16T08:51:45Z" finished-at="2016-11-16T08:51:45Z">
           <params>
             <param index="0">
               <value>
@@ -110,15 +86,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="label_friendurl()[pri:1, instance:news.co.uk.Main.TE2@6d4b1c02]" name="label_friendurl" duration-ms="118324" started-at="2016-11-12T12:30:33Z" finished-at="2016-11-12T12:32:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- label_friendurl -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE2@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="51" started-at="2016-11-12T12:32:32Z" finished-at="2016-11-12T12:32:32Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:news.co.uk.Main.TE2@6a41eaa2]" name="afterMethod" is-config="true" duration-ms="45" started-at="2016-11-16T08:54:46Z" finished-at="2016-11-16T08:54:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=label_friendurl status=SUCCESS method=TE2.label_friendurl()[pri:1, instance:news.co.uk.Main.TE2@6d4b1c02] output={null}]]]>
+                <![CDATA[[TestResult name=label_friendurl status=SUCCESS method=TE2.label_friendurl()[pri:1, instance:news.co.uk.Main.TE2@6a41eaa2] output={null}]]]>
               </value>
             </param>
           </params>

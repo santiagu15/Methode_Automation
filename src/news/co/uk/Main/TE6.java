@@ -12,7 +12,7 @@ import news.co.uk.Window.Template;
 
 public class TE6 extends AppLauncher{
 
-	@Test
+	@Test(priority =1)
 	public void existing_stories1() throws Exception{
 		Automation auto = new Automation();
 		auto.open_section(MainPage.Bus_Section_X, MainPage.Bus_Section_Y);
@@ -22,9 +22,9 @@ public class TE6 extends AppLauncher{
 		auto.story_rearrange();
 		auto.quickacess(Title.TEMPLATE_PAGE, Template.TOOLVIEW,Template.TOOLVIEW_X, Template.TOOLVIEW_Y,4);
 		auto.quick_icon_click(Title.TEMPLATE_PAGE,Template.QUICKACCESS,Template.QUICKACCESS_X, Template.QUICKACCESS_Y);
-		auto.quickacess_filename(NewStory.STORY_4);
+		auto.quickacess_filename(NewStory.STORY_1);
 		auto.existing_stroy(520, 120);auto.quick_icon_click(Title.TEMPLATE_PAGE,Template.QUICKACCESS,Template.QUICKACCESS_X, Template.QUICKACCESS_Y);
-		auto.quickacess_filename(NewStory.STORY_3);
+		auto.quickacess_filename(NewStory.RE_LINK);
 		auto.existing_stroy(390, 120);
 		/*auto.chromeiniti();
 		auto.template_preview();*/
